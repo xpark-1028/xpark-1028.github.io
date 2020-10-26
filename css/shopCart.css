@@ -171,22 +171,28 @@
     padding: 0 10px;
   }
   .fish_area_1 {
-    bottom: 5%;
+    bottom: 3%;
     left: 15%;
   }
   .fish_area_1 .fish1 {
-    width: 120px;
+    width: 90px;
   }
   .fish_area_1 p {
-    -webkit-transform: translate(40%, -40%);
-            transform: translate(40%, -40%);
+    -webkit-transform: translate(40%, 50%);
+            transform: translate(40%, 50%);
+    font-size: 14px;
   }
   .fish_area_2 {
     bottom: 4%;
     left: 60%;
   }
   .fish_area_2 .fish2 {
-    width: 120px;
+    width: 90px;
+  }
+  .fish_area_2 p {
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+    font-size: 24px;
   }
   .arrowBox {
     padding-top: 10px;
@@ -195,6 +201,15 @@
   }
   .arrowBox .fa-chevron-circle-right {
     margin-left: 10px;
+  }
+  .title {
+    padding-top: 0px;
+  }
+  #tabGroup {
+    top: 150px;
+  }
+  .swiper-container {
+    top: 150px;
   }
 }
 /*# sourceMappingURL=shopCart.css.map */
