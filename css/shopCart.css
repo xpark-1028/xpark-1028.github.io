@@ -131,6 +131,7 @@
   bottom: 10%;
   left: 30%;
   z-index: 10;
+  pointer-events: none;
 }
 
 .fish_area_1 .fish1 {
@@ -158,6 +159,66 @@
   font-weight: 600;
   opacity: 0;
   font-size: 26px;
+}
+
+.card {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  width: 600px;
+  padding: 30px 30px 0px 30px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.card .pic {
+  width: 100%;
+}
+
+.card .text_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .cross {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card .price {
+  margin: -5px;
 }
 
 @media screen and (max-width: 576px) {
@@ -210,6 +271,9 @@
   }
   .swiper-container {
     top: 150px;
+  }
+  .card {
+    width: 450px;
   }
 }
 /*# sourceMappingURL=shopCart.css.map */
