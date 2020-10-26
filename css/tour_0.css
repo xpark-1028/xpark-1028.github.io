@@ -8,6 +8,7 @@ html, body {
   margin: 0;
   background-color: #A6D8D0;
   overflow: hidden;
+  cursor: url(./mouse.png), crosshair;
 }
 
 .title {

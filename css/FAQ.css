@@ -9,6 +9,7 @@ html, body {
   background-color: #bfdedc;
   position: relative;
   overflow: hidden;
+  cursor: url(./mouse.png), crosshair;
 }
 
 .title {
@@ -221,8 +222,8 @@ html, body {
   top: 17%;
   left: 80%;
   position: absolute;
-  -webkit-animation: move 4s infinite;
-          animation: move 4s infinite;
+  -webkit-animation: move 4s;
+          animation: move 4s;
 }
 
 @-webkit-keyframes breath {

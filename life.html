@@ -49,12 +49,12 @@
         <div id="scene">
 
             <img class="wave_bg" data-depth="0.1" src="./material/waves/back_wave-15.svg" alt="">
-            <img class="wave_bg" data-depth="0.2" src="./material/waves/back_wave-16.svg" alt="">
-            <img class="wave_bg" data-depth="0.3" src="./material/waves/back_wave-17.svg" alt="">
-            <img class="wave_bg" data-depth="0.3" src="./material/waves/back_wave-16.svg" alt="">
-            <img class="wave_bg" data-depth="0.3" src="./material/waves/back_wave-17.svg" alt="">
-            <img class="wave_bg" data-depth="0.3" src="./material/waves/back_wave-16.svg" alt="">
-            <img class="wave_bg" data-depth="0.3" src="./material/waves/back_wave-17.svg" alt="">
+            <img class="wave_bg" data-depth="0.4" src="./material/waves/back_wave-16.svg" alt="">
+            <img class="wave_bg" data-depth="0.5" src="./material/waves/back_wave-17.svg" alt="">
+            <img class="wave_bg" data-depth="0.6" src="./material/waves/back_wave-16.svg" alt="">
+            <img class="wave_bg" data-depth="0.6" src="./material/waves/back_wave-17.svg" alt="">
+            <img class="wave_bg" data-depth="0.6" src="./material/waves/back_wave-16.svg" alt="">
+            <img class="wave_bg" data-depth="0.6" src="./material/waves/back_wave-17.svg" alt="">
             <img class="sand" src="./material/waves/sand-18.svg" alt="">
 
             <div class="fishes" data-depth="0.1">
@@ -82,7 +82,7 @@
                 <h1>魟魚</h1>
                 <p>魟科魚跟鰩科魚的身體都呈現扁平狀，常常會搞混，只要知道魟魚的尾巴上方有尖銳的毒刺，當魟魚感到威脅時會利用毒刺當作自衛武器，一但被刺到會有劇烈疼痛感、感染、心臟衰竭、甚至會有休克、死亡的風險，要馬上就醫處置。</p>
             </div>
-            <img class="pic" src="./images/img_shop_1.jpg" alt="">
+            <img class="fishID" src="./material/lifes/5.jpg" alt="">
         </div>
 
 
@@ -102,79 +102,97 @@
         var dataFsih = [
             {
                 name: '蝦蝦',
-                info: '蝦蝦好吃'
+                info: '蝦蝦好吃',
+                img: './material/lifes/1.jpg'
+
             },
 
             {
                 name: '魚魚',
-                info: '魚魚好吃'
+                info: '魚魚好吃',
+                img: './material/lifes/2.jpg'
             },
             {
                 name: '牛牛',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/3.jpg'
             },
             {
                 name: '牛牛1',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/4.jpg'
             },
             {
                 name: '牛牛2',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/5.jpg'
             },
             {
                 name: '牛牛3',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/1.jpg'
             },
             {
                 name: '牛牛4',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/2.jpg'
             },
             {
                 name: '牛牛5',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/3.jpg'
             },
             {
                 name: '牛牛',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/4.jpg'
             },
             {
                 name: '牛牛6',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/5.jpg'
             },
             {
                 name: '牛牛7',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/1.jpg'
             },
             {
                 name: '牛牛8',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/2.jpg'
             },
             {
                 name: '牛牛9',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/3.jpg'
             },
             {
                 name: '牛牛10',
-                info: '牛牛好牛'
+                info: '牛牛好牛',
+                img: './material/lifes/4.jpg'
             }
 
         ] 
+
+
         $(".cross").click(function(){
             $(".card").removeClass('active')
         });
 
         $('.fishes').on('click',function(e){
             var fish = event.target.dataset.fish
-            
+            console.log(e)
+
             if(e.target.nodeName == 'IMG'){
+                
                 $('.text_area h1').text(dataFsih[fish].name)
                 $('.text_area p').text(dataFsih[fish].info)
+                $('.fishID').attr("src",dataFsih[fish].img)
 
                 $(".card").addClass('active')   
 
-
             }
-
 
         })
 

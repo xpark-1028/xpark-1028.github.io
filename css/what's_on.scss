@@ -12,6 +12,7 @@ body {
   height: 100vh;
   background-color: $light_blue;
   font-family: source-han-sans-traditional, sans-serif;
+  cursor: url(./mouse.png),crosshair;
 }
 // 位置顯示屬性 display , float , position
 // 盒模型  width , height , padding , margin ,border
@@ -115,7 +116,7 @@ body {
         opacity: 0;
         
         &#news {
-          margin-top: 30px;
+          margin-top: 100px;
           @media (max-width: 1140px) {
             margin-top: 0px;
           }
@@ -230,7 +231,7 @@ body {
               justify-content: center;
               align-items: flex-end;
               height: 90%;
-              padding-bottom: 10px;
+              padding-bottom: 0px;
               transition: 0.3s;
               // background-color: $blue;
               border-top-left-radius: 5px;
