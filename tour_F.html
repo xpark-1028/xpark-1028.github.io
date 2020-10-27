@@ -46,6 +46,7 @@
     </div>
 
     <div class="guided">
+
       <div class="right_f1">
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -169,6 +170,10 @@
           <div class="swiper-scrollbar"></div>
         </div>
       </div>
+      <div class="arrowBox">
+        <div><i class="fas fa-chevron-circle-left"></i></div>
+        <div><i class="fas fa-chevron-circle-right"></i></div>
+    </div>
     </div>
 
     <div class="child">
@@ -179,7 +184,7 @@
     </div>
 
   </section>
-  
+
   <div id="nav">
     <i class="bars fas fa-bars"></i>
     <ul class="phoneVersion">
@@ -212,6 +217,10 @@
         el: '.swiper-scrollbar',
         hide: true,
       },
+      navigation: {
+                nextEl: '.fa-chevron-circle-right',
+                prevEl: '.fa-chevron-circle-left',
+            }
     });
 
     var swiper2 = new Swiper('.right_f2 .swiper-container', {
@@ -219,6 +228,10 @@
         el: '.swiper-scrollbar',
         hide: true,
       },
+      navigation: {
+                nextEl: '.fa-chevron-circle-right',
+                prevEl: '.fa-chevron-circle-left',
+            }
     });
 
     var swiper3 = new Swiper('.right_f3 .swiper-container', {
@@ -226,6 +239,10 @@
         el: '.swiper-scrollbar',
         hide: true,
       },
+      navigation: {
+                nextEl: '.fa-chevron-circle-right',
+                prevEl: '.fa-chevron-circle-left',
+            }
     });
 
 

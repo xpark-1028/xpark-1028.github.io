@@ -125,6 +125,19 @@ body {
   font-size: 16px;
 }
 
+.arrowBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrowBox i {
+  margin: 10px;
+}
+
 .child {
   position: absolute;
   bottom: -70px;

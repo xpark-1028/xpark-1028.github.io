@@ -42,6 +42,8 @@ html, body {
   width: 100%;
   height: 100%;
   pointer-events: auto;
+  -webkit-animation: breath 3s -0.5s infinite;
+          animation: breath 3s -0.5s infinite;
 }
 
 .fishes .fish_1 {
@@ -367,8 +369,8 @@ html, body {
             transform: scaleY(1);
   }
   50% {
-    -webkit-transform: scaleY(1.3);
-            transform: scaleY(1.3);
+    -webkit-transform: scaleY(1.02);
+            transform: scaleY(1.02);
   }
   100% {
     -webkit-transform: scaleY(1);
@@ -382,8 +384,8 @@ html, body {
             transform: scaleY(1);
   }
   50% {
-    -webkit-transform: scaleY(1.3);
-            transform: scaleY(1.3);
+    -webkit-transform: scaleY(1.02);
+            transform: scaleY(1.02);
   }
   100% {
     -webkit-transform: scaleY(1);
