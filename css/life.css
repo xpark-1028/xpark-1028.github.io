@@ -24,6 +24,12 @@ html, body {
   width: 120px;
 }
 
+@media screen and (max-width: 576px) {
+  .title_wave {
+    width: 500px;
+  }
+}
+
 .child {
   min-height: 80px;
   margin-top: 2%;
@@ -145,6 +151,13 @@ html, body {
   height: 100vh;
   overflow: hidden;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1020px) {
+  #scene {
+    top: 20px;
+    height: 95vh;
+  }
 }
 
 #scene .wave_bg {
@@ -279,6 +292,12 @@ html, body {
   width: 110% !important;
 }
 
+@media screen and (max-width: 1020px) {
+  #scene .sand {
+    bottom: 5% !important;
+  }
+}
+
 .card {
   position: absolute;
   width: 800px;
@@ -370,5 +389,16 @@ html, body {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
   }
+}
+
+@media screen and (max-width: 576px) {
+  .title_wave {
+    display: none;
+  }
+}
+
+#nav {
+  height: 0;
+  top: 60px;
 }
 /*# sourceMappingURL=life.css.map */
